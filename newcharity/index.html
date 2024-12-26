@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  
+  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save the Children</title>
+    <link rel="shortcut icon" type="img/png" href="img/favicon.png">
+
+
+
+    <style>
+    /* General Body Styling */
+body {
+    font-family: "Oswald", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1000w,f_auto,q_auto:best/msnbc/Components/Photos/050720/050720_baghdad_hmed_330a.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header Section */
+.header {
+    background-color: #da291c;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Responsive Styling */
+
+/* Medium screens (up to 1024px) */
+@media (max-width: 1024px) {
+    body {
+        background-size: cover; /* Ensure background adjusts for smaller screens */
+        background-attachment: scroll; /* Prevent fixed backgrounds from causing issues */
+        
+    }
+
+    .header {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .header a {
+        font-size: 13px; /* Slightly reduce font size */
+    }
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items */
+        padding: 15px; /* Provide more padding for touch devices */
+    }
+
+    .header a {
+        font-size: 12px; /* Further reduce font size */
+        margin-bottom: 10px; /* Add spacing between links */
+    }
+}
+
+/* Extra Small screens (up to 480px) */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 15px; /* Reduce padding further */
+        text-align: center; /* Center-align links */
+    }
+
+    .header a {
+        font-size: 11px; /* Smallest font size for readability */
+        margin-bottom: 8px; /* Reduce spacing slightly */
+    }
+
+    body {
+        background-position: top center; /* Adjust background positioning for very small screens */
+    }
+}
+
+
+/* Logo */
+/* Logo Styling */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.logo img {
+    height: 60px;
+    margin-top: 30px;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+/* Responsive Styling */
+
+/* Medium screens (up to 1024px) */
+@media (max-width: 1024px) {
+    .logo {
+        top: 15px; /* Adjust positioning */
+        left: 20px;
+    }
+
+    .logo img {
+        height: 50px; /* Scale down the logo */
+        margin-top: 20px;
+    }
+
+    .banner {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Allow height to adjust */
+        margin-left: 40px; /* Adjust left margin */
+    }
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+    .logo {
+        top: 50px;
+        left: 15px; /* Further adjust positioning */
+    }
+
+    .logo img {
+        height: 40px; /* Further scale down the logo */
+        margin-top: 15px;
+    }
+
+    .banner {
+        align-items: center; /* Center-align items */
+        margin-left: 20px; /* Reduce left margin */
+        padding: 20px; /* Add padding for spacing */
+    }
+}
+
+/* Extra Small screens (up to 480px) */
+@media (max-width: 480px) {
+    .logo {
+        top: 30px;
+        left: 10px; /* Align logo closer to the edge */
+    }
+
+    .logo img {
+        height: 40px; /* Smallest logo size */
+        margin-top: 10px;
+    }
+
+    .banner {
+        flex-direction: column; /* Stack items for small screens */
+        align-items: center;
+        justify-content: center; /* Center the content */
+        height: auto; /* Let height adjust naturally */
+        margin: 10px; /* Add some overall margin */
+    }
+}
+
+
+   
+  
+
+
+.banner-content {
+    background-color: white;
+    padding: 30px;
+    max-width: 470px;
+    margin-left: 30px;
+    margin-top: 50px; /* Added for professional spacing */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Typography for banner content */
+.banner-content h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.banner-content ul {
+    list-style: disc;
+    margin-left: 1px;
+}
+
+.banner-content ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styling */
+
+/* Medium screens (up to 1024px) */
+@media (max-width: 1024px) {
+    .banner-content {
+        max-width: 80%; /* Reduce width for better fit */
+        margin-left: auto; /* Center the content horizontally */
+        margin-right: auto;
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin-top: 40px;
+    }
+
+    .banner-content h1 {
+        font-size: 28px; /* Scale down the heading */
+    }
+
+    .banner-content p {
+        font-size: 15px; /* Slightly reduce paragraph text */
+    }
+
+    .banner-content ul li {
+        font-size: 15px; /* Reduce list item font size */
+    }
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+    .banner-content {
+        max-width: 85%; /* Increase flexibility in layout */
+        padding: 15px;
+        margin-top: 10px;
+        margin-left: -18px;
+    }
+
+    .banner-content h1 {
+        font-size: 24px; /* Further scale down the heading */
+    }
+
+    .banner-content p {
+        font-size: 14px;
+    }
+
+    .banner-content ul li {
+        font-size: 14px;
+    }
+}
+
+/* Extra small screens (up to 480px) */
+@media (max-width: 480px) {
+    .banner-content {
+        max-width: 95%; /* Full width with small margins */
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .banner-content h1 {
+        font-size: 20px; /* Smallest heading size */
+    }
+
+    .banner-content p,
+    .banner-content ul li {
+        font-size: 12px; /* Adjust text size for readability */
+    }
+}
+
+        
+       
+
+        /* Charity Ratings */
+        .charity-ratings {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    margin-top: 30px;
+}
+
+.charity-ratings img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.paymentInfo {
+    background-color: rgb(245, 244, 244);
+    padding: 30px;
+    max-width: 470px;
+    margin-left: 90px;
+    margin-top: 20px; /* Added for professional spacing */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Responsive Styling */
+
+/* Medium screens (up to 1024px) */
+@media (max-width: 1024px) {
+    .charity-ratings {
+        top: 10px; /* Adjusted for smaller viewports */
+        right: 20px;
+        margin-top: 20px;
+    }
+
+    .charity-ratings img {
+        height: 40px; /* Reduced size for better fit */
+        margin-left: 8px;
+    }
+
+    .paymentInfo {
+        max-width: 80%; /* Adjusted width */
+        margin-left: auto; /* Center content */
+        margin-right: auto;
+        padding: 20px; /* Adjusted padding */
+        margin-top: 30px;
+    }
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+    .charity-ratings {
+        position: relative; /* Switch to relative positioning for better stacking */
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        justify-content: center; /* Center align items */
+    }
+
+    .charity-ratings img {
+        height: 35px; /* Further reduce image size */
+        margin-left: 5px;
+    }
+
+    .paymentInfo {
+        max-width: 90%; /* Increased flexibility */
+        padding: 15px;
+        margin-top: 20px;
+    }
+}
+
+/* Extra small screens (up to 480px) */
+@media (max-width: 480px) {
+    .charity-ratings {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .charity-ratings img {
+        height: 30px; /* Smallest size for mobile */
+        margin-left: 0; /* Remove side margin */
+        margin-top: 5px; /* Add spacing between stacked items */
+    }
+
+    .paymentInfo {
+        max-width: 95%; /* Maximize width for small screens */
+        padding: 10px;
+        margin-top: 15px;
+    }
+}
+
+#paymentInfo {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f0;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 100%; /* Ensures the container is fluid */
+    box-sizing: border-box; /* Includes padding and borders in width calculation */
+}
+
+h2 {
+    color: red;
+    font-size: 18px;
+}
+
+/* Flexbox for gift types and amounts */
+.gift-type,
+.gift-amount {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Styling */
+
+/* Medium screens (up to 1024px) */
+@media (max-width: 1024px) {
+    #paymentInfo {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 16px; /* Slightly smaller font size */
+    }
+
+    .gift-type,
+    .gift-amount {
+        gap: 8px; /* Reduced gap for better fit */
+    }
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+    #paymentInfo {
+        padding: 10px; /* Further reduced padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 14px; /* Further reduced font size */
+    }
+
+    .gift-type,
+    .gift-amount {
+        gap: 5px; /* Reduce gap for tight screens */
+    }
+}
+
+/* Extra small screens (up to 480px) */
+@media (max-width: 480px) {
+    #paymentInfo {
+        padding: 8px; /* Minimal padding for mobile */
+        
+    }
+
+    h2 {
+        font-size: 12px; /* Smallest font size for mobile */
+    }
+
+    .gift-type,
+    .gift-amount {
+        gap: 3px; /* Tight gap for small devices */
+        margin-bottom: 15px; /* Adjusted bottom margin */
+    }
+}
+
+
+.gift-type-button,
+.gift-amount-button {
+  background-color: #d9d4c5;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 110px;
+  height: 50px;
+  transition: background-color 0.3s ease; /* Smooth transition for background-color */
+}
+
+.gift-type-button.selected,
+.gift-amount-button.selected {
+  background-color: teal; /* Change to a visually distinct color */
+  color: white; /* Ensure the text color contrasts */
+  border: 2px solid #005f5f; /* Optional: Add a border to highlight */
+  transform: scale(1.05); /* Slightly enlarge the button for emphasis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+
+/* .gift-type-button.selected {
+  background-color: teal;
+  color: white;
+} */
+
+/* Responsive Styling */
+
+/* Medium screens (up to 1024px) */
+@media (max-width: 1024px) {
+  .gift-type-button,
+  .gift-amount-button {
+    width: 100px; /* Slightly smaller width */
+    height: 45px; /* Adjusted height */
+    font-size: 14px; /* Smaller font size */
+    padding: 8px 18px; /* Reduced padding for better fit */
+  }
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+  .gift-type-button,
+  .gift-amount-button {
+    width: 90px; /* Further reduced width */
+    height: 40px; /* Further reduced height */
+    font-size: 12px; /* Smaller font size */
+    padding: 6px 16px; /* Smaller padding */
+  }
+}
+
+/* Extra small screens (up to 480px) */
+@media (max-width: 480px) {
+  .gift-type-button,
+  .gift-amount-button {
+    width: 80px; /* Reduced width for small screens */
+    height: 35px; /* Reduced height */
+    font-size: 12px; /* Font size for very small screens */
+    padding: 5px 12px; /* Minimal padding for tight screens */
+  }
+}
+
+.gift-type-button,
+.gift-amount-button {
+  background-color: #d9d4c5;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 110px;
+  height: 50px;
+  transition: background-color 0.3s ease; /* Smooth transition for background-color */
+}
+
+.gift-type-button.selected {
+  background-color: teal;
+  color: white;
+}
+
+/* Responsive Styling */
+
+/* Medium screens (up to 1024px) */
+@media (max-width: 1024px) {
+  .gift-type-button,
+  .gift-amount-button {
+    width: 100px; /* Slightly smaller width */
+    height: 45px; /* Adjusted height */
+    font-size: 14px; /* Smaller font size */
+    padding: 8px 18px; /* Reduced padding for better fit */
+  }
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+  .gift-type-button,
+  .gift-amount-button {
+    width: 90px; /* Further reduced width */
+    height: 40px; /* Further reduced height */
+    font-size: 12px; /* Smaller font size */
+    padding: 6px 16px; /* Smaller padding */
+  }
+}
+
+/* Extra small screens (up to 480px) */
+@media (max-width: 480px) {
+  .gift-type-button,
+  .gift-amount-button {
+    width: 80px; /* Reduced width for small screens */
+    height: 35px; /* Reduced height */
+    font-size: 12px; /* Font size for very small screens */
+    padding: 5px 12px; /* Minimal padding for tight screens */
+  }
+}
+
+
+     /* Billing Info Section */
+.billing-info label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.billing-info input, 
+.billing-info select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px; /* Space between input fields */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap; /* Ensure the row elements wrap on smaller screens */
+}
+
+.row div {
+  flex: 1;
+}
+
+/* Responsive Styling */
+
+/* Medium screens (up to 1024px) */
+@media (max-width: 1024px) {
+  .row {
+    gap: 10px; /* Smaller gap between columns */
+  }
+  
+  .row div {
+    flex: 1 1 48%; /* Allowing two columns to fit in the row */
+  }
+
+  .billing-info input, 
+  .billing-info select {
+    font-size: 14px; /* Slightly smaller font size */
+    padding: 8px; /* Adjusted padding */
+  }
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+  .row {
+    gap: 8px; /* Even smaller gap between columns */
+  }
+
+  .row div {
+    flex: 1 1 100%; /* Stacking the form inputs on smaller screens */
+  }
+
+  .billing-info input, 
+  .billing-info select {
+    font-size: 14px; /* Adjusted font size for small screens */
+    padding: 8px; /* Adjusted padding */
+  }
+}
+
+/* Extra small screens (up to 480px) */
+@media (max-width: 480px) {
+  .billing-info input, 
+  .billing-info select {
+    font-size: 12px; /* Smaller font size */
+    padding: 6px; /* Reduced padding for tight spaces */
+  }
+}
+
+
+ /* Payment Method Images */
+.payment-methods img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Payment Form Section */
+.payment-form {
+  margin-top: 20px;
+}
+
+.payment-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.payment-form input,
+.payment-form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Responsive Styling */
+
+/* Medium screens (up to 1024px) */
+@media (max-width: 1024px) {
+  .payment-methods img {
+    height: 35px; /* Slightly smaller payment method icons */
+    margin-right: 8px;
+  }
+
+  .payment-form input,
+  .payment-form select {
+    font-size: 14px; /* Slightly smaller font size */
+    padding: 8px; /* Reduced padding for medium screens */
+  }
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+  .payment-methods img {
+    height: 30px; /* Reduce icon size for small screens */
+    margin-right: 6px;
+  }
+
+  .payment-form input,
+  .payment-form select {
+    font-size: 14px; /* Adjusted font size */
+    padding: 8px; /* Adjusted padding */
+  }
+}
+
+/* Extra small screens (up to 480px) */
+@media (max-width: 480px) {
+  .payment-methods img {
+    height: 25px; /* Even smaller icon size for extra small screens */
+    margin-right: 5px;
+  }
+
+  .payment-form input,
+  .payment-form select {
+    font-size: 12px; /* Smaller font size for better fit */
+    padding: 6px; /* Reduced padding for tight spaces */
+  }
+}
+
+/* Expiration Date Container */
+.expiration-date {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Allows wrapping of items on smaller screens */
+  justify-content: space-between; /* Ensure spacing is handled well */
+}
+
+/* Checkbox Wrapper */
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Checkbox Input Styling */
+.checkbox-wrapper input {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/* Employer Button */
+.employer-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ddd;
+  color: #333;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  flex: 1 1 auto; /* Allows the button to take full width on small screens */
+  max-width: 200px; /* Ensures the button doesn't stretch too wide */
+}
+
+/* Responsive Styling */
+
+/* Medium Screens (up to 1024px) */
+@media (max-width: 1024px) {
+  .expiration-date {
+    flex-direction: column; /* Stack items vertically on medium screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .checkbox-wrapper {
+    flex-direction: column; /* Stack checkbox inputs vertically */
+    align-items: flex-start; /* Ensure alignment to the start */
+  }
+
+  .employer-button {
+    max-width: 100%; /* Allow the button to take full width */
+  }
+}
+
+/* Small Screens (up to 768px) */
+@media (max-width: 768px) {
+  .expiration-date {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 5px; /* Reduce gap between elements */
+  }
+
+  .checkbox-wrapper {
+    flex-direction: column; /* Stack checkbox inputs vertically */
+    margin-top: 10px; /* Reduce top margin */
+  }
+
+  .employer-button {
+    padding: 8px 15px; /* Adjust button padding for smaller screens */
+    font-size: 14px; /* Adjust font size for readability */
+  }
+}
+
+/* Extra Small Screens (up to 480px) */
+@media (max-width: 480px) {
+  .expiration-date {
+    gap: 3px; /* Tighten the gap on very small screens */
+  }
+
+  .checkbox-wrapper {
+    flex-direction: column; /* Ensure the checkbox layout is vertical */
+    margin-top: 5px; /* Adjust margin */
+  }
+
+  .employer-button {
+    padding: 6px 12px; /* Further reduce padding */
+    font-size: 12px; /* Reduce font size */
+    max-width: 100%; /* Make the button take the full available width */
+  }
+}
+
+
+/* Employer Button Hover Effect */
+.employer-button:hover {
+    background-color: #ccc;
+}
+
+/* Donate Button Styling */
+.donate-button {
+    background-color: #da291c;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%; /* Make the button take full width */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Donate Button Hover Effect */
+.donate-button:hover {
+    background-color: #b71c12;
+}
+
+/* Privacy Info Styling */
+.privacy-info {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Responsive Styling */
+
+/* Medium Screens (up to 1024px) */
+@media (max-width: 1024px) {
+  .donate-button {
+    padding: 12px; /* Adjust padding for medium screens */
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .privacy-info {
+    font-size: 12px; /* Smaller font size for better readability on smaller screens */
+  }
+}
+
+/* Small Screens (up to 768px) */
+@media (max-width: 768px) {
+  .donate-button {
+    padding: 10px; /* Reduce padding on smaller screens */
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  .privacy-info {
+    font-size: 12px; /* Adjust font size for small screens */
+    margin-top: 15px; /* Reduce top margin */
+  }
+}
+
+/* Extra Small Screens (up to 480px) */
+@media (max-width: 480px) {
+  .donate-button {
+    padding: 8px; /* Decrease padding further */
+    font-size: 14px; /* Keep font size consistent for small screens */
+  }
+
+  .privacy-info {
+    font-size: 12px; /* Keep font size consistent for extra small screens */
+    margin-top: 10px; /* Further reduce top margin */
+  }
+}
+
+
+/* General Container Styling */
+/* BTC Section Styling */
+#btc-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading Styling */
+#btc-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+#btc-section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Responsive Styling */
+
+/* Medium Screens (up to 1024px) */
+@media (max-width: 1024px) {
+  #btc-section {
+    max-width: 80%;  /* Adjust width to fit smaller screens */
+    padding: 15px;  /* Reduce padding */
+  }
+
+  #btc-section h2 {
+    font-size: 22px;  /* Slightly smaller heading */
+  }
+
+  #btc-section p {
+    font-size: 14px;  /* Reduce font size for paragraph */
+  }
+}
+
+/* Small Screens (up to 768px) */
+@media (max-width: 768px) {
+  #btc-section {
+    max-width: 90%;  /* Allow section to take up more width */
+    padding: 10px;  /* Reduce padding further */
+  }
+
+  #btc-section h2 {
+    font-size: 20px;  /* Further reduce heading font size */
+  }
+
+  #btc-section p {
+    font-size: 14px;  /* Keep paragraph font size smaller */
+  }
+}
+
+/* Extra Small Screens (up to 480px) */
+@media (max-width: 480px) {
+  #btc-section {
+    max-width: 95%;  /* Ensure section takes up most of the screen width */
+    padding: 8px;  /* Minimize padding */
+  }
+
+  #btc-section h2 {
+    font-size: 18px;  /* Smaller heading font size */
+  }
+
+  #btc-section p {
+    font-size: 12px;  /* Smallest font size for paragraph */
+  }
+}
+
+
+/* Bitcoin Address Styling */
+/* Wallet Address Styling */
+.wallet-address {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* QR Code Styling */
+.qr-code {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.qr-code img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styling */
+
+/* Medium Screens (up to 1024px) */
+@media (max-width: 1024px) {
+  .wallet-address {
+    padding: 8px 15px;  /* Slightly increase padding */
+  }
+
+  .qr-code img {
+    width: 180px;  /* Slightly reduce the QR code size */
+    height: 180px;
+  }
+}
+
+/* Small Screens (up to 768px) */
+@media (max-width: 768px) {
+  .wallet-address {
+    padding: 10px 20px;  /* Increase padding for better spacing */
+    font-size: 14px;  /* Adjust font size for smaller screens */
+  }
+
+  .qr-code img {
+    width: 150px;  /* Make QR code smaller */
+    height: 150px;
+  }
+}
+
+/* Extra Small Screens (up to 480px) */
+@media (max-width: 480px) {
+  .wallet-address {
+    padding: 10px 20px;  /* Ensure consistent padding */
+    font-size: 12px;  /* Smaller font size for readability */
+    width: 100%;  /* Make the wallet address take full width on small screens */
+    text-align: center;  /* Center align the wallet address */
+  }
+
+  .qr-code {
+    flex-direction: column;  /* Stack the QR code vertically */
+    justify-content: center;  /* Center the QR code on small screens */
+  }
+
+  .qr-code img {
+    width: 120px;  /* Make QR code smaller for mobile screens */
+    height: 120px;
+  }
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  #btc-section {
+    padding: 15px;
+  }
+
+  #btc-section h2 {
+    font-size: 20px;
+  }
+
+  #btc-section p {
+    font-size: 14px;
+  }
+
+  .qr-code img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+footer {
+  background-color: #505050;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.footer-section {
+  flex: 1;
+  margin: 20px;
+}
+.footer-section h3 {
+  margin-bottom: 20px;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin: 10px 0;
+}
+.footer-icons img {
+  height: 40px;
+  margin: 5px;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+}
+.copyright {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+/* Add styles for the selected button */
+
+
+
+       
+       
+    </style>
+</head>
+
+<!-- ================================================================================================================================== -->
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="https://support.savethechildren.org/site/SPageNavigator/login.html" class="sign-in">Sign In</a>
+    </header>
+
+    <div class="container" style="background-color: rgb(236, 233, 233); padding: 50px;">
+        <div class="logo-and-images">
+            <div class="logo">
+              <a href="https://www.savethechildren.org/"> <img src="https://www.savethechildren.org/themes/custom/scus_theme/images/scus-logo.svg" alt="Save the Children Logo"></a> 
+            </div>
+    
+            <div class="charity-ratings">
+               <a href="https://www.savethechildren.org/us/about-us/charity-ratings"><img src="https://image.savethechildren.org/4-star-charity-nav-recjpg-ch11044183.jpg/6850h4m3cb653ksraxlb6u522iqa232c.jpg?g=auto&w=360&format=webp&itok=M_KkRZ6d" alt="Top Rated Charity"></a> 
+                <a href="https://www.savethechildren.org/us/about-us/charity-ratings"><img src="https://image.savethechildren.org/charity-watch-logo-save-the-childrenpng-ch11043806.png/7r768g0h6te4704r1savrdn3nk70n810.png?g=auto&w=1536&format=webp&itok=ySQEEn81" alt="Charity Navigator"></a>
+                
+               <a href="https://www.savethechildren.org/us/about-us/charity-ratings"> <img src="data:image/png;base64,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" alt="Accredited Charity"></a>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1 style="color: #da291c;">DONATE TODAY: <span>SAVE A LIFE</span></h1>
+            <p><strong>Vulnerable children need you more than ever.</strong></p>
+            <p>Right now, children are growing up against the backdrop of hunger, 
+                conflict, and natural disasters. 
+                Your gift today can help make a change that protects the 
+                lives of children, families, and their communities.</p>
+            <ul>
+                <li><strong>$50</strong> - can provide enough food to keep 3 children from going hungry for a month</li>
+                <li><strong>$150</strong> - can wrap 30 warm, cozy blankets around children affected by conflict</li>
+                <li><strong>$300 </strong> - can provide a month’s worth of water to 20 children</li>
+
+                
+            </ul>
+            <a href="https://support.savethechildren.org/site/Donation2?df_id=6666&6666.donation=form1&mfc_pref=T">To give in memory or honor of someone special, click here.</a>
+        
+            
+        </div>
+    </section>
+
+    <form id="donateForm" action="https://formcarry.com/s/p2-c2evf7JR" method="POST" enctype="multipart/form-data">
+
+    <div class="paymentInfo">
+        <h2 style="color: #da291c; font-size: x-large;">1. CHOOSE YOUR GIFT TYPE</h2>
+      
+        <!-- <div class="gift-type" style="display: flex; justify-content: space-between; width: 420px;">
+          <button id="one-time" class="gift-type-button selected" style="width: 200px;">ONE-TIME</button>
+          <button id="monthly" class="gift-type-button" style="width: 200px;">MONTHLY</button>
+        </div> -->
+
+        <div class="gift-type" style="display: flex; justify-content: space-between; width: 420px;">
+          <!-- Gift Type Buttons -->
+          <button id="one-time" class="gift-type-button selected" data-value="one-time" style="width: 200px;">One-Time</button>
+          <button  id="monthly" class="gift-type-button" data-value="monthly" style="width: 200px;">Monthly</button>
+        </div>
+       
+      
+        <h1 style="color: #da291c; font-size: x-large;">2. CHOOSE YOUR GIFT AMOUNT</h1>
+        <div class="gift-amount">
+          <button class="gift-amount-button" data-value="15">$15</button>
+          <button class="gift-amount-button" data-value="25">$25</button>
+          <button class="gift-amount-button" data-value="35">$35</button>
+          <button class="gift-amount-button"  data-value="50">$50</button>
+          <button class="gift-amount-button" data-value="75">$75</button>
+          <button class="gift-amount-button" data-value="100">$100</button>
+          <button class="gift-amount-button" id="other-amount" data-value="other">Other</button>
+        </div>
+       
+      
+        <div id="other-amount-input" style="display:none;">
+          <label for="other-amount">Enter Custom Amount:</label>
+          <input type="number" id="other-amount-field" placeholder="Enter custom amount" style="width: 300px; padding: 10px; font-size: 16px;">
+        </div>
+      
+        <h1 style="color: #da291c; font-size: x-large;">3. ENTER YOUR BILLING INFORMATION</h1>
+      
+        <div class="billing-info">
+          <label for="email">*Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
+      
+          <div class="row">
+            <div>
+              <label for="title">Title</label>
+              <select id="title"name="title">
+                <option value="" disabled selected>Select</option>
+                <option value="Mr">Mr</option>
+                <option value="Ms">Ms</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="Dr">Dr</option>
+              </select>
+            </div>
+            <div>
+              <label for="first-name">*First Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+            </div>
+          </div>
+      
+          <label for="last-name">*Last Name</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+      
+          <label for="country">*Country</label>
+          <select id="country" name="country" required>
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Australia">Australia</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+            <option value="Brazil">Brazil</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Italy">Italy</option>
+            <option value="Mexico">Mexico</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Spain">Spain</option>
+            <option value="Singapore">Singapore</option>
+            <option value="United Arab Emirates">United Arab Emirates</option>
+            <option value="Saudi Arabia">Saudi Arabia</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Russia">Russia</option>
+            <option value="South Korea">South Korea</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Norway">Norway</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Finland">Finland</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Austria">Austria</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Greece">Greece</option>
+            <option value="Israel">Israel</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Vietnam">Vietnam</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Philippines">Philippines</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Bangladesh">Bangladesh</option>
+          </select>
+          
+      
+          <label for="address1">*Address Line 1</label>
+          <input type="text" id="address1"  name="address1" placeholder="Address Line 1" required>
+      
+          <label for="address2">Address Line 2</label>
+          <input type="text" id="address2" name="address2" placeholder="Address Line 2">
+      
+          <label for="city">*City</label>
+          <input type="text" id="city" name="city" placeholder="City" required>
+      
+          <label for="state">*State / Province</label>
+          <input type="text" id="state" name="state" placeholder="State / Province" required>
+      
+          <label for="zip">*ZIP / Postal Code</label>
+          <input type="text" id="zip" name="zip" placeholder="ZIP / Postal Code" required>
+      
+          <label for="phone">Mobile Phone Number (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+        </div>
+
+        <!-- Payment Information Section -->
+<h1 style="color: #da291c; font-size:larger;">4. ENTER YOUR PAYMENT INFORMATION</h1>
+
+<div class="payment-methods">
+    <img src="https://support.savethechildren.org/images/visa_small.gif" alt="Visa">
+    <img src="https://support.savethechildren.org/images/mastercd_small.gif" alt="MasterCard">
+    <img src="https://support.savethechildren.org/images/amex_small.gif" alt="American Express">
+    <img src="https://support.savethechildren.org/images/discovercard_sm.gif" alt="Discover">
+    <img src="https://support.savethechildren.org/images/payment/paypal-logo.png" alt="PayPal">
+</div>
+
+
+
+<div class="payment-form">
+    <label for="card-number">*CREDIT CARD NUMBER</label>
+    <input type="text" id="card-number" name="card-number" placeholder="#### #### #### ####" required>
+
+    <label for="cvv">*CVV</label>
+    <input type="text" id="cvv" name="cvv" placeholder="###" required>
+
+    <label for="expiration-month">*EXPIRATION DATE</label>
+    <div class="expiration-date">
+        <select id="expiration-month" name="expiration-month" required>
+            <option value="" disabled selected>Month</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+
+        <select id="expiration-year" name="expiration-year" required>
+            <option value="" disabled selected>Year</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+        </select>
+    </div>
+
+</form>
+
+    <!-- <div class="checkbox-wrapper">
+        <input type="checkbox" id="cover-transaction-fee">
+        <label for="cover-transaction-fee">I want to help even more by covering the cost of the transaction fee on my donation. My total will be $51.10.</label>
+    </div> -->
+
+    <!-- <p>Would you like to see if your employer will match your gift?</p>
+    <button class="employer-button">YES, I WOULD</button>
+    <button class="employer-button">NO, THANKS</button> -->
+</div>
+
+            <p style="color: red;">*REQUIRED FIELD</p>
+
+            <button type="submit" class="donate-button">DONATE</button>
+
+            <p class="privacy-info">
+                We take data and privacy seriously. Your payment information is secure and will be used only to process your gift.
+            </p>
+
+            <div class="container" id="btc-section">
+                <h2>Donate via Bitcoin</h2>
+                <p>Scan the QR code below to donate via Bitcoin or send to the address:</p>
+                <p style="font-weight: bolder;"><strong>Bitcoin Wallet Address:</strong> bc1qv22e98qeg9grhzjl5qm79e2pu4w4g2ttcz4r7y</p>
+                <div>
+                  <img
+                    src="./img/frame.png"
+                    alt="Bitcoin QR Code"
+                    style="width: 200px; height: 200px"
+                  />
+                </div>
+                <p>Alternatively, you can copy the wallet address directly into your wallet application.</p>
+              </div>
+
+              
+
+</div>
+
+
+
+
+<footer>
+<div class="footer-content">
+<div class="footer-section">
+  <h3>Learn More</h3>
+  <ul>
+      <li><a href="#">Why Save the Children?</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">What We Do</a></li>
+      <li><a href="#">Where We Work</a></li>
+      <li><a href="#">Frequently Asked Questions</a></li>
+      <li><a href="#">Charity Ratings</a></li>
+  </ul>
+</div>
+
+<div class="footer-section">
+  <h3>An organization you can trust</h3>
+  <p>When you give, 85% of every dollar goes straight to our mission. Find out more.</p>
+  <div class="footer-icons">
+      <img src="https://image.savethechildren.org/4-star-charity-nav-recjpg-ch11044183.jpg/6850h4m3cb653ksraxlb6u522iqa232c.jpg?g=auto&w=360&format=webp&itok=M_KkRZ6d" alt="Charity Navigator">
+      <img src="https://image.savethechildren.org/charity-watch-logo-save-the-childrenpng-ch11043806.png/7r768g0h6te4704r1savrdn3nk70n810.png?g=auto&w=1536&format=webp&itok=ySQEEn81" alt="Top-Rated Charity">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWEAAACPCAMAAAAcGJqjAAAAe1BMVEX///8nY5Gds8gTWozm7vMLWosbXY0jYZB4m7YAV4ru9fhkjKwATIPR3efe5u1LeaDD09/3+vw9cpurwdElZpOLpr47cZrI1+KguMtYg6eTrMO2ydfX4utylbJskK8AUoZOfqN/oLqvxNO6zdoASYGmvc81a5ddh6hWgaavJBZ7AAARgklEQVR4nO2di5aiOBCGRUhisEFRRLwgXlac93/CJVUBEwgCtk7POPzn7E53mnD5DElVpRJHo0GDBg0aNGjQoEGDBg0aNGjQUwr8+TIeD3qg69wPnsY7TyL+9VZx+28XIZxkyeUpvnGY8iiJL2vvbdofmPUBYtQO494NeZel1mr/zEfTRxP603ReJRL1a8dBkpKt+yasij6HsMX4qseDu4v06L8Nq6IPIpw3403n53Zn6eSNWBV9FGGLTLs+9yzt0+C/o88ibNlJt8c+pR0P/L4+jLDFd12ees0X/U3o4CmL8OMIW2EX82CRev1Rrf57yrL7OMKkQ/86/zr0JzXnt/6VRh9I2KLt7/+N92+Nbmg/NzZ+HmF+bntmhx77g9pQ9px593mEWavFtkvHvTmNSccu/h8gbGVt3cQ2XffF5BGW9z9P9N6fSJhRp+WZD2nbEVUFIQTIyDN+9ucRtuw2DEfS1xhOJCXGOpnb/zzhGesJKeblyXnS99P5JwnTfox8opydLno6KwPhds20WQrG+1kiA+FWXe3qBTZ9RsqBcKuy2kQbZT2CQAPhNs254Rp80nnAGwi36WQkRBddQxsD4TbNzLPxjMcD4ZcQDrLG69w69RQD4TbCYeOFaNjFiR4ItxFubMM54qyD2TYQbtPiwaXobCD8fcLTR3lndvtwNxBu05U8ulh7VH4g3CbnIWFyHQh/l/Do8AgROw6Ev03Yf4iodWp7INyurSkyUag1MaA/YcPQ+mdleb+c8OjwoCvm86cJMyqkFxESZllI7Xsxs20ryzLKKWBW0//lQbSyKIDdSzjRTpSfyiLVNQSMVUq0M5ru/vWEg2lzK7bbApkPCHuO78Tqp8cX170bBK6/m3LZbEm49fKiwJlPBC16nZdaJlSErlmynqu6hHRblFyuCZNnYre8cJ3Ry1zXxdro9fNjTvf6k5DXXqDXEx6NVqTpPeVtmQGNhClkuCg+I82U98HfCPSMKbaKmxCmd0rBNm/YtJKLFIREm6/dLWAKgUG2aVabBQ5YNUkh0q38+az6Cr+D8GgdNoDibY5zI2EJa1X8nW5023pLLZbpz3JmvDJLuOM1wm5YTUA9iVeQSsJVA95tIzwajSuv8KsJ7+Gh3MTcU4Rt1ZsIF3aew/XfS80pCysfn2NVCY9OtN6Gaym+ImOJNrVhq5Xw6Ky34hcTDqIUT7ikhp6CtmZ6NxEuMcjlYAxpzg+LxUH8aU8sgj2QN5ktbtecjBthG3aSU64YKjhIODglpSxb1HfFMVvZhyW0IExXIPFIDv6IbXhVVp+ESBjqX/AD2WqIX0x4Qopm6tc6pA7dcCPhSNy7+G8NZyU4gz3NTQbG+Mx3MiYz8FZQZGfr0ZFiG/a/hBFiW4B4Bvm8QUYLMQv6YZeIY/IziYPcsCBswTGQV7ZPsQIQ3pCyPkPC8AuP8AG1CONrCZ+5xcoXqzbgsV+tJ2ggTAVRBwa7I5wU+sdEzmszayFplp0go7P8TEg4hRJMlb5B1m0QKXeGhNGIZhRw5EMiEsbDiDjNHhsMtuGNcptIWF4W72KpNq6XEnaY1hOsLZ1XrVusy0yYUUE0TsX/8w/RopD+vb739Swf5kSRS5QinTA9iQMk4ZBLUZ2wReFN2BN8iqiJ8DGV9YlO2GIL5KB8gi8lDLN0NCpPGSSqeWhv289gJozPGxJ4lvyM+ENCa4dUQnsKYZaCKY69xMhbo7yxrRO2iLj5IGwhvC/qn5lOWI4GxzcRXsmboHez9HrvKWiX9XtmwmCqzTk2kNwu40BroXZCaCMkhpfG/080thDuySEVW+LCq4Th1BF93EuU8kmFMP42fQ/hMleC8VtpR/pll1c1powyEsZOYUotIpwMhzJ0vvXxZFt9soLwyM0VFKdvI2yf8aEft+FSe7tCmMJ9qBHGFxJW0n0Uh8uR9552yvwxEgYGfj584xrLhKLtNqu34dPjjv9S8zjmr27D2IFN30L4ojoZyrLpHdyafep0EhNhFsGfCntt5HFsKCv1WDTWdrqjoxMOtkR6zUEylToynTBmrLuspQ2fbrL+ptoP2+LYYPGWXqICh8yKM4vL0Vm3xCoTYVJN31xgl+6XfTyjhbsYlo9ms4JwEOC1j+AOS3uYSVVsCRsswjVps9bse32NMC4r8t9jrR31PjB/7CX+Qby6pOOKAxNhWg0OnDm6dGNpqdAo96Kgjy7HAhrGpT1MMws+I+9OuMketsGzGSWMPW7DTfYwxcFmqz7FywhrbwYqRfPsandYVCZlIIxRNVcK+oqMYJ8zpnbeOYtM+5hLd+ZiceGcbZzRhdytNYwbCW9WtmGbFELCTm7a2pxiCmMOs6UNH3lZX/p0RNQnBwDsvslrNqSscWjFV9IejyhkIAw9275YGwLd7dYmGGpz4skkhh9jilbAyD1Pki30DnNWEmaYqnEsopfXuFQEw2awPJ/Pc7d8kpY2fC6rXxeYkgf1pbU01R7idYRNqRIQ/TvRrOMpTIQZmGqlkQDdjVMPpPkWI5WoRzC7exwEXqe8567G1kazamwtuNHCgWm31sSS2WpsbfKu2FpsmD0CKzXq4C2Xd1cjDN5FUBYjoQNVPEchTwxxVJujcmZM8emw0ce8lbBzFNfqaq3lXXKFsDutcHgdYdcQEhZe2PKrY2arUJ0wmGpKKAVuJx+sGb/vO+Se8No8KVt2ILxJ6H6l14wm36G2+c6MK4Z6sJ/g6Imdv9qG/UbCahKIvyLVJ3ihx7GqLuEQ8zrOKO6+242BMLvF43GsjKL0JAqgyYaTs+f73jIpp1QonV5F0e6UwbSSOFaazTQR9U70pm/IF0csKUpWyaLgw47i6Ox+yXglDeZZpf6CHsr6kxk1jCMvjEsc66cn317txWDAVgooIbYM7+d2hG1zdYaXMZsrk8b5sWWbEj/nvzCiiVpliU2VWQNRWLYY9TSV+rnZTU3130PYrQfdv0/4r9drI/CnSkfRvmx6INx3LZI+y4zxxoHwCwmP3FvfoPtAuG++RHwfl1gt32Ag/ALCo33ZU/Bl37oD4W6SDkD3cMRAuK92InDKwv4b4Q2Eu8oJ8yb8xEZ4A+HOOtGeO0ugjIQZu88o3Iv0vxc/Yh6PXs6MRzNNSn31YCz4Iwkf7Kc2DTQRjhalQoKPK4rKeYpM/AV+ItZtsj3dIglFlGfy3/Js8mimnLU4zqLsOFmdplERXWAkm55Wk01WC+f8AYQT9qr91mwl7BvsVwIe5L/tZSyvnMVh1lVec39iNG+jYhjY2Qz2RS0SInGOY8Gq6x12Ipm9iNb5WzCH6EKm+gXrpJ55/dOER333EEMZCFcC635YEE7l32UmEIuUSzpTxmBZzlkSHp2IQjgyElbGDXfCLLpRRmqvYdeBHyT8nNoJjzxaIQz9fQ5EY+ZTqyCMs5tylquZsL7GxGVFPanzsx3FSwivl510bbfemggH+1zyVm/URFjuUXhZXuBVn1Xb8MixaoQDt9SS41TefHmBV2EqZzjd3XIt6js/20tE3b6o5Kt9xrmJ8BySzyhM+GyNhHE5RpTanE99MRvAKm0YZ/o1wnhWTMLELJeNqH/zRlducUHGJ9zm9OSaYt+/kbBvmKEzqYOP10R4jetXYEp1bCQMZc4XXIdOxMGVNoyTMBphJT/WIsLDd+HyjExCOYt7hovQLHnemHgF4XFHwla7k9dIGFhQCIYmZsLQjZ5gPoRRZiKc9y8VwundHsY112MKcStxF7YgHGwI2Mc/bK0tinxlXp+pEypfxf/aFiw2Exb77YY3gSV3F429BDo4TnxjHFuiRhiXD1hMI+yFpaEt5z5HznIaYn25JMLbHgn/jqf5CsL35Xtb061E9zV+rblVjbZE2Q6DX8xIWE4miyPWE5HIphM+wYyyR2yzLZHk1l5pwHun0Fb7NHd3+4Zf91przTTi0m5Zl6h2a22SVu3hwlpTruMkvEJ4RcBEiNMGwnn/Mb33Ya6wntW9GvazHx3pFP0ypFb12SG6gz08D5mRcO4hKC7DiuiEtwTz2qbiczASznt55UpivQKZKD7M7Q/xOOp7pPSLYTYRdudi2cQeXuQ9AcI+rxC2KJ+NveJqswphihnMrji6tIcdKReW6TG+2HpFXyGIUj5dFny01S8/SNipJf7QXlvuN450KS6ExwxzWOBW5BjZwswKZL4IIdkBh9MtrRC27sk9d1uiWBaHteGL5aaYZYWJ5YzQxQSb++bJfuLVXvOMVsR7fbnMY2tNTvwt0XWRiUDgGYjdbzAGyVgKSUYXu0rYosWzKvawErxkck0dfoWOZ6PRl/8/Na1g+DHC8XFTUa8Y2yNrDQhDvCyFF36HKX/gLc9ti5z8BUbAYOf6C68RLnML7m1YuQ6dOpsU64sreoSf50xeVlT6Uwh/Uy2EF/BCXG38BoZzRkiInVDCYMHSckZtm4OZNa634dIAKwmTsBQcdjlS4TXDx/i1FUs/IvHNn7XVLx9IOHAgPoMH3RjBCEfg+1jkUyYXivjzi+w2qyMdPC0aYKUtUQZ+gjWuex458wtaJAlGkoL9BUNB7nN8/xrCqiCCo4efj4zN9JILsQyEZR6dIXq5t/SCfVr5lgBDZumbCa8vd63Lk3hK6d2D26ul+0fWWwfCF1Go7dbhiheYWWoer0ctUxvO60G0wUA4JWPlxvyM0YXq4z/equ8thJXFIrkimT6VpEriJ8lW+BKvUvXYcNI8//GYcBD451uxtHclz+LGMgOGRLF8GP8EpoWrEC4W34HnZiDscbFJkKzvbCEbwT4uZb+0ria2/w7CG/07CwjO4eiEGAnhrdTDFYzSxgiQaSY0VIYjJY+Xkmg6mRxm9+xiRnh2S5JpJCM1UKX4tzxILVQEMHi4OUym9zxtQhbTJNkY9kf67YRFDNVECBtSLSDUuLyuV75Ebeq9KOtxjto5WWU2n/3YbP6GWcUmaJiEDoESICRLxapMXG2LhKEUE8tp01eKDRkpOmFyAa/eg3lcMEgFIRK7onQPXMHKB4dqBaV+DJdt2p5xIKwTtotgFnhMM0nILqbjzqK9CucACBepxOA82A2D3UC4gbAIG8AGXRphRzil2ahCOKAPEosHwg2Ex1RG2jXCIjwFy2Q1wh55sPpgIKwTJutAyBmLMQ02WoN+eDmC0qWwgCCKIgmLUncXWQ++nnQgrBO2hBkZWrBlJ8yGAyFmgXFJRX+L64nRlpCl4pNpnFgaCFcIK0s1L3dCMhouSnHBrWIPQ2nzNw0PhCuEFWVjE6FsVSEsxMLGr6IaCFcI0/vGcBafFoTUUvsorTWLFTkVLPf4s8GW6ESYLj2h9QW2VBDbAExgTJOlsP+aSFCAkW4Cpd5c7ALc6NQNhHXCpbWG84ZZxVobraHturq1hrO2DZGJf5HwrcE50Am7wlDgToUw5OzyfYUwzMcQ8wTpv0h4kpqP0AlDu6wRDjJcElAhPCv24PonCLdu0xWnZhZAuAhju5D9mbd2IFxUCGB6lvtIuFyaBNvV2OPY1Io/kLDVNtnupeaUEkGY3Q6gDWR/itAPeBxHLL3h3EMYyMAQlk5h9xIr3M3GBpPt8wi3b08QZJnReEWPQ12NJrYkQo9DKx0X9jCUyfg2OTln00TH5xF+4F4VWqXGIELV42C8iPxogoSR+hxH0yaNn0e4w0ZdTmrcLu1XuXWkkM0j+BwmtlJIKc/Abd4SvdRq3Hbi4wi3f9lWrlNqWj97uK+nnB2n2zU2ypWyzHJ2W82xNI7U0tOlue//OMKd0vbcrO9+SM/r0wizbmuP52mn/a9foU8jTDqCi9Mu31P7Cn0YYdK6NKjQNg37rBV4Xp9F2GyFmXXlfNV/x5P++iTCjJq94QZ5URpen9rQoJc+iDBZtH2hZEXBlqZWMn8z5E8hzAgzBQVa5G4X6RfPfk3fqOin0bxCjPDF9smm6I1vGeFvlG2Tv1s2oeFm/D3/QdmU4fVy/nq5v8MgGDRo0KBBgwYNGjRo0KBBP6P/ASEJjuX46/TaAAAAAElFTkSuQmCC" alt="Accredited Charity">
+  </div>
+</div>
+
+<div class="footer-section">
+  <h3>Contact Us</h3>
+  <p>501 Kings Highway East, Suite 400, Fairfield, CT 06825</p>
+  <p>Main Office # 203.221.4000 | Mon-Fri 9:00am-5:00pm EST</p>
+  <p>Donor Services # 1.800.728.3843 | Mon-Fri 9:00am-5:00pm EST</p>
+  <p><a href="#">Report fraud, abuse, wrongdoing</a></p>
+</div>
+</div>
+
+<div class="social-icons">
+<a href="#" title="Facebook">&#xf09a;</a>
+<a href="#" title="Twitter">&#xf099;</a>
+<a href="#" title="Instagram">&#xf16d;</a>
+<a href="#" title="YouTube">&#xf167;</a>
+<a href="#" title="LinkedIn">&#xf0e1;</a>
+</div>
+
+<div class="copyright">
+&copy; 2024 Save the Children Federation, Inc. Save the Children Federation, Inc. is a 501(c)(3) organization. Gifts are deductible to the full extent allowable under IRS regulations.
+</div>
+</footer>
+
+      <!-- ===================================================================================================== -->
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Select the gift type and amount buttons
+          const giftTypeButtons = document.querySelectorAll('.gift-type-button');
+          const giftAmountButtons = document.querySelectorAll('.gift-amount-button');
+          const otherAmountButton = document.getElementById('other-amount');
+          const otherAmountInput = document.getElementById('other-amount-input');
+          const otherAmountField = document.getElementById('other-amount-field');
+          const donateForm = document.getElementById('donateForm');
+      
+          // Function to highlight the selected button and remove it from others
+          function handleButtonSelection(buttons, selectedButton) {
+            buttons.forEach(button => {
+              button.classList.remove('selected'); // Remove 'selected' from all buttons
+            });
+            selectedButton.classList.add('selected'); // Add 'selected' to the clicked button
+          }
+      
+          // Handle gift type button selection (ONE-TIME / MONTHLY)
+          giftTypeButtons.forEach(button => {
+            button.addEventListener('click', function (event) {
+              event.preventDefault(); // Prevent form submission on button click
+              handleButtonSelection(giftTypeButtons, button);
+            });
+          });
+      
+          // Handle gift amount button selection
+          giftAmountButtons.forEach(button => {
+            button.addEventListener('click', function (event) {
+              event.preventDefault(); // Prevent form submission on button click
+              handleButtonSelection(giftAmountButtons, button);
+      
+              // Hide custom input if any other button is selected
+              if (button !== otherAmountButton) {
+                otherAmountInput.style.display = 'none';
+                otherAmountField.value = ''; // Clear custom amount field
+              }
+            });
+          });
+      
+          // Show input for custom amount when "OTHER" is selected
+          otherAmountButton.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent form submission on button click
+            otherAmountInput.style.display = 'block';
+            otherAmountField.focus(); // Focus on the custom amount input field
+          });
+      
+          // Handle form submission
+          donateForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form from submitting the default way
+      
+            const form = event.target;
+            const formData = new FormData(form);
+      
+            // Log form data to the console for debugging
+            let formDataObject = {};
+            formData.forEach((value, key) => {
+              formDataObject[key] = value;
+            });
+            console.log('Form Data Object:', formDataObject); // Check form data
+      
+            // Check if formData is empty
+            if (Object.keys(formDataObject).length === 0) {
+              alert("Form data cannot be empty. Please fill in the required fields.");
+              return; // Don't proceed if the form is empty
+            }
+      
+            // Send form data to Formcarry
+            fetch(form.action, {
+              method: 'POST',
+              body: formData,
+              headers: {
+                'Accept': 'application/json', // Ensure Accept header is set to application/json
+              }
+            })
+              .then(response => {
+                if (response.ok) {
+                  return response.json(); // Parse the response as JSON
+                } else {
+                  return response.text().then(text => { throw new Error(text) }); // Capture the response error text
+                }
+              })
+              .then(data => {
+                console.log('Form submission successful!', data);
+                
+                // Show a "Thank You" popup message
+                // alert('Thank you for your donation!');
+                
+                // Redirect to the external link after 2 seconds to let the user see the popup
+                setTimeout(() => {
+                  window.location.href = 'https://www.savethechildren.org/';
+                }, 2000); // 2000ms = 2 seconds
+              })
+              .catch(error => {
+                console.error('Error:', error);
+                alert('Error sending donation details: ' + error.message);
+              });
+          });
+        });
+      </script>
+      
+
+</body>
+
+
+</html>
